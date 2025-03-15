@@ -1,48 +1,51 @@
-# Hostel Management System
+# Hostel Management System  
 
-This project is a simple command-line interface for managing hostel records using a MySQL database. It allows users to perform various operations such as admission, status checking, updating details, and more.
+## 📌 Project Overview  
+**Hostel Management System** is a **Python-based command-line application** designed to manage hostel records efficiently using a **MySQL database**. It allows users to **add, update, and check hostel records** while maintaining structured data storage. This project ensures **data integrity, ease of access, and simplified hostel record management** through a user-friendly interface.  
 
-## Features
+## ✨ Features  
+- **Admission Form** – Register new students in the hostel.  
+- **Status Checking** – View records based on department.  
+- **Update Details** – Modify existing student details.  
+- **Authorities Access** – Placeholder for future authority-based operations.  
+- **Exit** – Terminates the application.  
 
-- **Admission Form**: Add new hostel records.
-- **Status Checking**: Check records based on the department.
-- **Update Details**: Update existing records.
-- **Authorities Access**: Placeholder for authority access.
-- **Exit**: End the program.
+---
 
-## Getting Started
+## 🛠 Tech Stack  
+- **Programming Language:** Python  
+- **Database:** MySQL  
+- **Database Connector:** `mysql-connector-python`  
 
-To use this system, ensure you have MySQL installed and configured. Follow these steps:
+---
 
-### Prerequisites
+## 📂 Project Structure  
+```
+hostel-management/
+├── Hostel Management.py     # Main script to run the application
+└── README.md                # Project documentation
+```  
 
-- Python 3.x
-- MySQL Server
-- `mysql-connector-python` library
+---
 
-### Installation
+## 🛠 Prerequisites  
+Before running the application, ensure you have the following installed:  
+- **Python 3.x**  
+- **MySQL Server**  
+- **Required Python Package:** `mysql-connector-python`  
 
-1. **Clone the repository:**
+### 🔧 Installation & Setup  
 
-    ```bash
-    git clone https://github.com/er-anubhavgoel/Hostel-Management.git
-    cd Hostel-Management
+1. **Install dependencies:**  
     ```
-
-2. **Install dependencies:**
-
-    Install the required Python package using pip:
-
-    ```bash
     pip install mysql-connector-python
     ```
 
-3. **Setup MySQL Database:**
+2. **Set up MySQL database:**  
+    - Create a database named **`HOSTEL_MANAGEMENT`**.  
+    - Run the following SQL script to create the `HOSTEL` table:  
 
-    - Create a database named `HOSTEL_MANAGEMENT`.
-    - Create a table named `HOSTEL` with the following schema:
-
-      ```sql
+      ```
       CREATE TABLE HOSTEL (
           rgn_no INT PRIMARY KEY,
           name VARCHAR(20),
@@ -54,20 +57,22 @@ To use this system, ensure you have MySQL installed and configured. Follow these
       );
       ```
 
-### Usage
+---
 
-1. **Run the application:**
+## 🚀 Running the Application  
 
-    ```bash
-    python your_script_name.py
+1. **Start the application:**  
+    ```
+    python "Hostel Management.py"
     ```
 
-2. **Follow the on-screen prompts** to perform operations like adding records, checking statuses, and updating details.
+2. **Follow the on-screen prompts** to perform various operations like admissions, status checks, and updates.  
 
-### Example
+---
 
-Here's how the main menu looks:
+## 📸 Application Interface  
 
+### **Main Menu**  
 ```
 WELCOME TO HOSTEL MANAGEMENT
 
@@ -79,20 +84,10 @@ MAKE YOUR PREFERENCE:
 5. EXIT
 ```
 
-### Code Overview
+---
 
-- **Database Connection**: Connects to the MySQL database.
-- **AdmnForm()**: Handles new admissions.
-- **StatusCheck()**: Checks records based on department.
-- **UpdateDetails()**: Updates existing records.
-
-### Contributing
-
-Feel free to open issues or submit pull requests. Your contributions are welcome!
-
-Anubhav Goel  
-Email: anubhavgoel0520@hotmail.com  
-LinkedIn: [Anubhav Goel](https://linkedin.com/in/er-anubhavgoel)  
-GitHub: [er-anubhavgoel](https://github.com/er-anubhavgoel)  
-
-GitHub Repository: [Hostel-Management](https://github.com/er-anubhavgoel/Hostel-Management)
+## 🏗 Code Overview  
+- **Database Connection:** Manages MySQL connectivity.  
+- **`AdmnForm()`** – Handles student admissions.  
+- **`StatusCheck()`** – Retrieves records based on the department.  
+- **`UpdateDetails()`** – Updates existing student records.
